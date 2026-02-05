@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@layer base {
+	:root {
+		--color-white: #FFFFFF;
+		--color-black: #000000;
+		--color-blue-950: #10141E;
+		--color-blue-900: #161D2F;
+		--color-blue-500: #5A698F;
+		--color-red-500: #FC4747;
+		--color-black-0: rgba(0, 0, 0, 0);
+		--color-black-75: rgba(0, 0, 0, 0.75);
+		
+		--font-outfit: "Outfit", sans-serif;
+		
+		--spacing-0: 0;
+		--spacing-100: 8px;
+		--spacing-200: 16px;
+		--spacing-300: 24px;
+		--spacing-400: 32px;
+		--spacing-500: 40px;
+		--spacing-700: 56px;
+		--spacing-900: 72px;
+		--spacing-1000: 80px;
+	}
+
+	html,
+	body,
+	#root {
+		height: 100%;
+		background-color: #10141E;
+		overflow-x: hidden;
+		overflow-y: auto;
+		overscroll-behavior-y: none;
+	}
+}
+
+@layer utilities {
+	/* Desktop presets */
+	.text-preset-1 {
+		font-size: 32px;
+		line-height: 1.25;
+		letter-spacing: -0.5px;
+	}
+	
+	.text-preset-2-desktop {
+		font-size: 24px;
+		line-height: 1.25;
+		letter-spacing: 0;
+	}
+	
+	.text-preset-3 {
+		font-size: 18px;
+		line-height: 1.25;
+		letter-spacing: 0;
+	}
+	
+	.text-preset-4 {
+		font-size: 15px;
+		line-height: 1.25;
+		letter-spacing: 0;
+	}
+	
+	.text-preset-5 {
+		font-size: 13px;
+		line-height: 1.25;
+		letter-spacing: 0;
+	}
+	
+	/* Mobile presets */
+	.text-preset-1-mobile {
+		font-size: 20px;
+		line-height: 1.25;
+		letter-spacing: -0.3px;
+	}
+	
+	.text-preset-2-mobile {
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0;
+	}
+	
+	.text-preset-3-mobile {
+		font-size: 15px;
+		line-height: 1.25;
+		letter-spacing: 0;
+	}
+	
+	.text-preset-4-mobile {
+		font-size: 14px;
+		line-height: 1.25;
+		letter-spacing: 0;
+	}
+	
+	.text-preset-5-mobile {
+		font-size: 12px;
+		line-height: 1.25;
+		letter-spacing: 0;
+	}
+	
+	.text-preset-6-mobile {
+		font-size: 11px;
+		line-height: 1.25;
+		letter-spacing: 0;
+	}
+	
+	/* Font utilities */
+	.font-outfit-light {
+		font-family: var(--font-outfit);
+		font-weight: 300;
+	}
+	
+	.font-outfit-medium {
+		font-family: var(--font-outfit);
+		font-weight: 500;
+	}
+}
+
+@layer utilities {
+	.trailer-reveal {
+		opacity: 0;
+		transform: translateY(12px);
+		animation: trailer-reveal 0.5s ease-out forwards;
+	}
+}
+
+@keyframes trailer-reveal {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

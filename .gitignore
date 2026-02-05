@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+backend/*.mp4
+backend/*.avi
+backend/*.mov
+backend/*.mkv
+backend/*.flv
+backend/*.wmv
